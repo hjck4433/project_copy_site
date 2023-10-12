@@ -3,27 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blizzard Entertainment</title>
+
+    <!-- link -->
+    <!-- reset css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- 너무 큰 img html 작업중 사이즈 줄이기용 임시 style -->
     <style>
-        body {
-            /* background-color: darkblue; */
-        }
         img {
-            width: 50px;
-        }
-        img:first-child {
-            opacity: .8;
-            transition: .5s;
-        }
-        img:first-child:hover {
-            opacity: 1;
+            width: 100px;
         }
     </style>
+
 </head>
 <body>
-    <img src="./images/logo_header.png" alt="">
-    <img src="./images/logo_blizzard.png" alt="">
-    <object data="./bnet-logo.svg" type="image/svg+xml"></object>
-    <img src="./images/icons/bnet-logo_grey.svg" alt="">
+    <header>
+        <a class="logo" href="javascript:0">
+            <img src="./images/logo_header.png" alt="Blizzard">
+        </a>
+        <nav class="menu_mo">
+            <ul>
+
+            </ul>
+        </nav>
+        <nav class="menu_pc">
+            <ul>
+                <li>
+                    <a href="javascript:0">
+                        워크래프트
+                        <i class="fa-solid fa-angle-down"></i>
+                    </a>
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </nav>
+    </header>
 </body>
 </html>
