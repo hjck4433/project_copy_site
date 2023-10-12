@@ -6,13 +6,14 @@
     <title>Document</title>
     <style>
         body {
-            background-color: darkblue;
+            /* background-color: darkblue; */
         }
         img {
-            width: 100px;
+            width: 50px;
         }
         img:first-child {
             opacity: .8;
+            transition: .5s;
         }
         img:first-child:hover {
             opacity: 1;
@@ -22,5 +23,7 @@
 <body>
     <img src="./images/logo_header.png" alt="">
     <img src="./images/logo_blizzard.png" alt="">
+    <object data="./bnet-logo.svg" type="image/svg+xml"></object>
+    <img src="./images/icons/bnet-logo_grey.svg" alt="">
 </body>
 </html>
