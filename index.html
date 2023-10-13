@@ -41,6 +41,22 @@
       height: 15px;
       border: 3px solid white;
     }
+
+    .logo {
+      position: relative;
+
+    }
+    .logo img {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .logo:hover img:nth-child(2) {
+      opacity: 0;
+    }
+    video {
+      width: 200px;
+    }
   </style>
 
 </head>
@@ -48,19 +64,20 @@
   <!-- header start -->
   <header>
     <a class="logo" href="javascript:0">
-      <img src="./images/logo_header.png" alt="Blizzard">
+      <img src="./images/blizzard_logo_hover.svg" alt="Blizzard">
+      <img src="./images/blizzard_logo.svg" alt="Blizzard">
     </a>
     <!-- 햄버거 메뉴 -->
     <a class="hambuger-menu" href="">
       <i class="fa-solid fa-bars"></i>
     </a>
     <!-- PC 메뉴 -->
-    <nav class="menu_pc">
+    <nav class="menu">
       <ul>
         <!-- 워크래프트 -->
         <li>
           <a href="javascript:0">
-            워크래프트
+            <h3>워크래프트</h3>
             <i class="fa-solid fa-angle-down"></i>
           </a>
           <!-- sub-menu -->
@@ -70,7 +87,7 @@
               <a href="javascript:0">
                 <img class="sub-icon" src="./images/icons/world-of-warcraft.svg" alt="아이콘">
                 <div class="title-box">
-                  <p class="g-title">월드 오브 워크래프트</p>
+                  <h4 class="g-title">월드 오브 워크래프트</h4>
                   <p class="g-type">MMORPG</p>
                 </div>
               </a>
@@ -81,7 +98,7 @@
               <a href="javascript:0">
                 <img class="sub-icon" src="./images/icons/WOW_WClassic_.svg" alt="아이콘">
                 <div class="title-box">
-                  <p class="g-title">월드 오브 워크래프트 클래식</p>
+                  <h4 class="g-title">월드 오브 워크래프트 클래식</h4>
                   <p class="g-type">MMORPG</p>
                 </div>
               </a>
@@ -92,7 +109,7 @@
               <a href="javascript:0">
                 <img class="sub-icon" src="./images/icons/hearthstone.svg" alt="아이콘">
                 <div class="title-box">
-                  <p class="g-title">하스스톤</p>
+                  <h4 class="g-title">하스스톤</h4>
                   <p class="g-type">전략적 카드 게임</p>
                 </div>
               </a>
@@ -103,7 +120,7 @@
               <a href="javascript:0">
                 <img class="sub-icon" src="./images/icons/warcraft-iii.svg" alt="아이콘">
                 <div class="title-box">
-                  <p class="g-title">워크래프트 III: 리포지드</p>
+                  <h4 class="g-title">워크래프트 III: 리포지드</h4>
                   <p class="g-type">실시간 전략</p>
                 </div>
               </a>
@@ -114,7 +131,7 @@
               <a href="javascript:0">
                 <img class="sub-icon" src="./images/icons/WarcraftArclightRumble.svg" alt="아이콘">
                 <div class="title-box">
-                  <p class="g-title">워크래프트 럼블</p>
+                  <h4 class="g-title">워크래프트 럼블</h4>
                   <p class="g-type">모바일 액션 전략</p>
                 </div>
               </a>
@@ -126,7 +143,7 @@
         <!-- 디아블로 -->
         <li>
           <a href="javascript:0">
-            
+            <h3>디아블로</h3>
             <i class="fa-solid fa-angle-down"></i>
           </a>
           <!-- sub-menu -->
@@ -136,7 +153,7 @@
               <a href="javascript:0">
                 <img class="sub-icon" src="./images/icons/diablo4.svg" alt="아이콘">
                 <div class="title-box">
-                  <p class="g-title">디아블로 IV</p>
+                  <h4 class="g-title">디아블로 IV</h4>
                   <p class="g-type">액션 RPG <span>신규</span></p>
                 </div>
               </a>
@@ -147,7 +164,7 @@
               <a href="javascript:0">
                 <img class="sub-icon" src="./images/icons/diablo_immotal.svg" alt="아이콘">
                 <div class="title-box">
-                  <p class="g-title">디아블로 이모탈</p>
+                  <h4 class="g-title">디아블로 이모탈</h4>
                   <p class="g-type">액션</p>
                 </div>
               </a>
@@ -158,7 +175,7 @@
               <a href="javascript:0">
                 <img class="sub-icon" src="./images/icons/diablo_immotal.svg" alt="아이콘">
                 <div class="title-box">
-                  <p class="g-title">디아블로 II: 레저렉션</p>
+                  <h4 class="g-title">디아블로 II: 레저렉션</h4>
                   <p class="g-type">액션 RPG</p>
                 </div>
               </a>
@@ -169,7 +186,7 @@
               <a href="javascript:0">
                 <img class="sub-icon" src="./images/icons/diablo-iii.svg" alt="아이콘">
                 <div class="title-box">
-                  <p class="g-title">디아블로 III</p>
+                  <h4 class="g-title">디아블로 III</h4>
                   <p class="g-type">액션 RPG</p>
                 </div>
               </a>
@@ -181,7 +198,7 @@
         <!-- 오버워치 -->
         <li>
           <a href="javascript:0">
-            오버워치
+            <h3>오버워치</h3>
             <i class="fa-solid fa-angle-down"></i>
           </a>
           <!-- sub-menu -->
@@ -191,7 +208,7 @@
               <a href="javascript:0">
                 <img class="sub-icon" src="./images/icons/Overwatch2.svg" alt="아이콘">
                 <div class="title-box">
-                  <p class="g-title">오버워치2</p>
+                  <h4 class="g-title">오버워치2</h4>
                   <p class="g-type">팀 기반 액션</p>
                 </div>
               </a>
@@ -203,7 +220,7 @@
         <!-- 스타크래프트 -->
         <li>
           <a href="javascript:0">
-            스타크래프트
+            <h3>스타크래프트</h3>
             <i class="fa-solid fa-angle-down"></i>
           </a>
           <!-- sub-menu -->
@@ -213,7 +230,7 @@
               <a href="javascript:0">
                 <img class="sub-icon" src="./images/icons/starcraft-ii.svg" alt="아이콘">
                 <div class="title-box">
-                  <p class="g-title">스타크래프트 II</p>
+                  <h4 class="g-title">스타크래프트 II</h4>
                   <p class="g-type">실시간 전략</p>
                 </div>
               </a>
@@ -224,7 +241,7 @@
               <a href="javascript:0">
                 <img class="sub-icon" src="./images/icons/starcraft-remastered.svg" alt="아이콘">
                 <div class="title-box">
-                  <p class="g-title">스타크래프트: 리마스터</p>
+                  <h4 class="g-title">스타크래프트: 리마스터</h4>
                   <p class="g-type">실시간 전략</p>
                 </div>
               </a>
@@ -235,7 +252,9 @@
         <!-- 스타크래프트  -->
         <!-- 이벤트 -->
         <li>
-          <a href="javascript:0">이벤트</a>
+          <a href="javascript:0">
+            <h3>이벤트</h3>
+          </a>
         </li>
         <!-- //이벤트 -->
         <!-- more -->
@@ -250,7 +269,7 @@
               <a href="javascript:0">
                 <img class="sub-icon" src="./images/icons/Overwatch2.svg" alt="아이콘">
                 <div class="title-box">
-                  <p class="g-title">오버워치2</p>
+                  <h4 class="g-title">오버워치2</h4>
                   <p class="g-type">팀 기반 액션</p>
                 </div>
               </a>
@@ -261,7 +280,7 @@
               <a href="javascript:0">
                 <img class="sub-icon" src="./images/icons/starcraft-ii.svg" alt="아이콘">
                 <div class="title-box">
-                  <p class="g-title">스타크래프트 II</p>
+                  <h4 class="g-title">스타크래프트 II</h>
                   <p class="g-type">실시간 전략</p>
                 </div>
               </a>
@@ -272,7 +291,7 @@
               <a href="javascript:0">
                 <img class="sub-icon" src="./images/icons/starcraft-remastered.svg" alt="아이콘">
                 <div class="title-box">
-                  <p class="g-title">스타크래프트: 리마스터</p>
+                  <h4 class="g-title">스타크래프트: 리마스터</h4>
                   <p class="g-type">실시간 전략</p>
                 </div>
               </a>
@@ -288,7 +307,7 @@
               <a href="javascript:0">
                 <img class="sub-icon" src="./images/icons/heroes-of-the-storm.svg" alt="아이콘">
                 <div class="title-box">
-                  <p class="g-title">히어로즈 오브 더 스톰</p>
+                  <h4 class="g-title">히어로즈 오브 더 스톰</h4>
                   <p class="g-type">MOBA</p>
                 </div>
               </a>
@@ -301,7 +320,7 @@
                   <div class="square"></div><div class="square"></div>
                   <div class="square"></div><div class="square"></div>
                 </div>
-                모든 게임
+                <h4>모든 게임</h4>
               </a>
             </li>
             <!-- //모든 게임 -->
@@ -309,16 +328,728 @@
         </li>
         <!-- //more -->
       </ul>
-      <!-- // nav.menu_pc ul -->
     </nav> 
-    <!--// nav.menu_pc -->
+    <!--// nav.menu -->
+    <!-- nav.menu2 -->
     <nav class="menu2_pc">
       <ul>
-        <li></li>
+        <!-- info -->
+        <li>
+          <a href="javascript:0">
+            <h3>회사소개</h3>
+            <i class="fa-solid fa-angle-down"></i>
+          </a>
+          <ul class="menu2_sub">
+            <!-- 기업정보 -->
+            <li>
+              <a href="javascript:0">
+                <img class="sub-icon" src="./images/icons/blizz_icon.png" alt="아이콘">
+                <h4>기업정보</h4>
+              </a>
+            </li>
+            <!-- //기업정보 -->
+            <!-- 새 소식 -->
+            <li>
+              <a href="javascript:0">
+                <i class="fa-solid fa-file-lines sub-icon"></i>
+                <h4>새 소식</h4>
+              </a>
+            </li>
+            <!-- //새 소식 -->
+            <!-- 블리즈컨 -->
+            <li>
+              <a href="javascript:0">
+                <i class="fa-solid fa-ticket sub-icon"></i>
+                <h4>블리즈컨 <span>신규</span></h4>
+              </a>
+            </li>
+            <!-- //블리즈컨 -->
+            <!-- 인재 채용 -->
+            <li>
+              <a href="javascript:0">
+                <i class="fa-solid fa-suitcase sub-icon"></i>
+                <h4>인재 채용</h4>
+              </a>
+            </li>
+            <!-- //인재 채용 -->
+            <!-- 상품 -->
+            <li>
+              <a href="javascript:0">
+                <i class="fa-solid fa-shirt sub-icon"></i>
+                <h4>
+                  상품
+                  <i class="fa-solid fa-arrow-up"></i>
+                </h4>
+              </a>
+            </li>
+            <!-- //상품 -->
+          </ul>
+        </li>
+        <!-- //info -->
+        <!-- store -->
+        <li>
+          <a href="javascript:0">
+            <h3>상점</h3>
+          </a>
+        </li>
+        <!-- //store -->
+        <!-- memebers -->
+        <li>
+          <a href="javascript:0">
+            <i class="fa-regular fa-user"></i>
+            <h3>계정</h3>
+            <i class="fa-solid fa-angle-down"></i>
+          </a>
+          <ul>
+            <!-- 로그인 -->
+            <li class="login">
+              <a href="javascript:0">
+                <img src="./images/icons/bnet-logo_white.svg" alt="아이콘">
+                <h4>로그인</h4>
+              </a>
+            </li>
+            <!-- //로그인 -->
+            <!-- 계정 관리 -->
+            <li>
+              <a href="javascript:0">
+                <i class="fa-solid fa-gear"></i>
+                <h4>계정 관리</h4>
+              </a>
+            </li>
+            <!-- //계정 관리 -->
+            <!-- 회원 가입 -->
+            <li>
+              <a href="javascript:0">
+                <i class="fa-solid fa-pen-to-square"></i>
+                <h4>무료 회원 가입</h4>
+              </a>
+            </li>
+            <!-- 회원 가입 -->
+            <!-- 고객지원 -->
+            <li>
+              <a href="javascript:0">
+                <i class="fa-regular fa-circle-question"></i>
+                <h4>고객지원</h4>
+              </a>
+            </li>
+            <!-- //고객지원 -->
+            <!-- 샵 -->
+            <li>
+              <a href="javascript:0">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <h4>샵</h4>
+              </a>
+            </li>
+            <!-- //샵 -->
+            <!-- 앱 다운로드 -->
+            <li>
+              <a href="javascript:0">
+                <i class="fa-solid fa-download"></i>
+                <h4>Battle.net 앱 다운로드</h4>
+              </a>
+            </li>
+            <!-- //앱 다운로드 -->
+          </ul>
+        </li>
+        <!-- //members -->
+        <!-- 다운로드 버튼 -->
+        <li>
+          <a href="javascript:0">
+            <img src="./images/icons/bnet-logo.svg" alt="아이콘">
+            <h3>Battle.net 다운로드</h3>
+          </a>
+        </li>
       </ul>
     </nav>
-
+    <!-- //nav.menu2 -->
   </header>
   <!-- //header -->
+
+  <!-- main, 첫번째 section 을 감싸줄 container1 *bg가 두번째 section과 다름* -->
+  <div class="container1">
+
+    <!-- main -->
+    <main>
+      <div class="inner-container">
+        <div class="slide-wrapper">
+          <!--디아블로4 slide -->
+          <div class="slide diablo4">
+            <a href="javascript:0">
+              <img class="slide-logo" src="./images/g-logo/main06_DIABLO4_Logo_K.png" alt="디아블로4">
+              <div class="text">
+                <h2>첫 번째 시즌이 시작되었습니다</h2>
+              </div>
+              <div class="btn-box">
+                <a class="btn1" href="javascript:0">자세히 보기</a>
+                <a class="btn2" href="javascript:0">구매하기</a>
+              </div>
+            </a>
+          </div>
+          <!-- //디아블로4 slide -->
+          <!-- 오버워치2 slide -->
+          <div class="slide overwatch2">
+            <a href="javascript:0">
+              <img class="slide-logo" src="./images/g-logo/main01_overwatch2_logo2.png" alt="오버워치2">
+              <div class="text">
+                <h2>팀을 꾸려 어둠에 맞서세요</h2>
+              </div>
+              <div class="btn-box">
+                <a class="btn1" href="javascript:0">자세히 보기</a>
+              </div>
+            </a>
+          </div>
+          <!-- //오버워치2 slide -->
+          <!--블리즈컨 slide -->
+          <div class="slide blizzcon">
+            <a href="javascript:0">
+              <img class="slide-logo" src="./images/g-logo/main02_blizzcon_logo.png" alt="블리즈컨">
+              <div class="text">
+                <h2>블리즈컨 컬렉션 확인하기</h2>
+                <p>어디에서든지 모험을 즐기세요!</p>
+              </div>
+              <div class="btn-box">
+                <a class="btn1" href="javascript:0">구매하기</a>
+                <a class="btn2" href="javascript:0">자세히 보기</a>
+              </div>
+            </a>
+          </div>
+          <!-- //블리즈컨 slide -->
+          <!-- WOW CLASSIC slide -->
+          <div class="slide wow-classic">
+            <a href="javascript:0">
+              <img class="slide-logo" src="./images/g-logo/main03_wow_classic_logo.png" alt="와우 클래식">
+              <div class="text">
+                <h2>리치 왕의 몰락을 직접 확인하세요</h2>
+              </div>
+              <div class="btn-box">
+                <a class="btn1" href="javascript:0">자세히 보기</a>
+              </div>
+            </a>
+          </div>
+          <!-- //WOW CLASSIC slide -->
+          <!-- 워크래프트 럼블slide -->
+          <div class="slide rumble">
+            <a href="javascript:0">
+              <img class="slide-logo" src="./images/g-logo/main04_warcraft_Rumble_Logo2.png" alt="워크래프트 럼블">
+              <div class="text">
+                <h2>워크래프트 럼블이 11월 4일 출시됩니다</h2>
+              </div>
+              <div class="btn-box">
+                <a class="btn1" href="javascript:0">지금 사전 등록</a>
+              </div>
+            </a>
+          </div>
+          <!-- //워크래프트 럼블 slide -->
+          <!-- 디아블로 임모탈 slide -->
+          <div class="slide immortal">
+            <a href="javascript:0">
+              <img class="slide-logo" src="./images/g-logo/main05_DIABLO_Immortal_VectorLogo_White.png" alt="디아블로 임모탈">
+              <div class="text">
+                <h2>어둠의 부활이 시작되었습니다</h2>
+                <p>트리스트럼 대성당, 새로운 PvP모드 등 다양한 콘텐츠가 추가됩니다</p>
+              </div>
+              <div class="btn-box">
+                <a class="btn1" href="javascript:0">자세히 보기</a>
+              </div>
+            </a>
+          </div>
+          <!-- //디아블로 임모탈 slide -->
+        </div>
+        <!-- 슬라이드 화살표 -->
+        <div class="arr-btn">
+          <a class="prev" href="javascript:0">
+            <i class="fa-solid fa-angle-left"></i>
+          </a>
+          <a class="next" href="javascript:0">
+            <i class="fa-solid fa-angle-right"></i>
+          </a>
+        </div>
+        <!-- //슬라이드 화살표 -->
+        <!-- 페이지네이션 -->
+        <div class="pagination">
+          <ul>
+            <li class="active"><a href="#javascript:0"></a></li>
+            <li><a href="#javascript:0" data-seq="1"></a></li>
+            <li><a href="#javascript:0" data-seq="2"></a></li>
+            <li><a href="#javascript:0" data-seq="3"></a></li>
+            <li><a href="#javascript:0" data-seq="4"></a></li>
+            <li><a href="#javascript:0" data-seq="5"></a></li>
+          </ul>
+        </div>
+        <!-- //페이지네이션 -->
+      </div>
+    </main>
+    <!-- //main -->
+
+    <!-- 추천게임 -->
+    <section class="recomm">
+      <div class="inner-container">
+        <!-- section 제목 -->
+        <div class="section-title">
+          <h2>추천 게임</h2>
+          <ul class="playable">
+            <li><a href="javascript:0">PC</a></li>
+            <li><a href="javascript:0">콘솔</a></li>
+            <li><a href="javascript:0">모바일</a></li>
+          </ul>
+        </div>
+        <!-- //section 제목 -->
+        <!-- GRID AREA : GAME LIST -->
+        <ul class="game-list">
+          <!-- 워크래프트 럼블 -->
+          <li class="rumble mobile">
+            <a href="javascript:0">
+              <!-- 이미지/비디오 영역 -->
+              <div class="multi-box">
+                <div class="comming-soon">출시 예정</div>
+                <video class="g-video" src="./medias/warcraft_rumble.webm" muted></video>
+                <img class="poster" src="./images/g-img/warcraft_rumble.jpg" alt="포스터">
+                <img class="g-logo" src="./images/g-logo/item01_warcraft_Rumble_Logo.png" alt="로고">
+              </div>
+              <!-- //이미지/비디오 영역 -->
+              <h3 class="g-title">워크래프트 럼블</h3>
+              <p class="type">모바일 액션 전략</p>
+              <!-- 게임스토어 리스트 -->
+              <ul class="downloadable">
+                <li class="app-store">
+                  <a href="javascript:0">
+                    <i class="fa-brands fa-apple"></i>
+                  </a>
+                </li>
+                <li class="google-play">
+                  <a href="javascript:0">
+                    <i class="fa-brands fa-google-play"></i>
+                  </a>
+                </li>
+              </ul>
+              <!-- //게임스토어 리스트 -->
+            </a>
+          </li>
+          <!-- //워크래프트 럼블 -->
+
+          <!-- 디아블로 IV -->
+          <li class="diablo4 pc console">
+            <a href="javascript:0">
+              <!-- 이미지/비디오 영역 -->
+              <div class="multi-box">
+                <video class="g-video" src="./medias/diablo4.webm" muted></video>
+                <img class="poster" src="./images/g-img/diablo4.jpg" alt="포스터">
+                <img class="g-logo" src="./images/g-logo/item02_DIABLO4_Logo_K_2.png" alt="로고">
+              </div>
+              <!-- //이미지/비디오 영역 -->
+              <h3 class="g-title">디아블로 IV</h3>
+              <p class="type">액션 RPG</p>
+              <!-- 게임스토어 리스트 -->
+              <ul class="downloadable">
+                <li class="battle-net">
+                  <a href="javascript:0">
+                    <img src="./images/icons/bnet-logo_grey.svg" alt="배틀넷">
+                  </a>
+                </li>
+                <li class="xbox">
+                  <a href="javascript:0">
+                    <i class="fa-brands fa-xbox"></i>
+                  </a>
+                </li>
+                <li class="playstation">
+                  <a href="javascript:0">
+                    <i class="fa-brands fa-playstation"></i>
+                  </a>
+                </li>
+              </ul>
+              <!-- //게임스토어 리스트 -->
+            </a>
+          </li>
+          <!-- //디아블로 IV -->
+
+          <!-- 월드 오브 워크래프트 -->
+          <li class="wow pc">
+            <a href="javascript:0">
+              <!-- 이미지/비디오 영역 -->
+              <div class="multi-box">
+                <video class="g-video" src="./medias/wow.webm" muted></video>
+                <img class="poster" src="./images/g-img/wow.jpg" alt="포스터">
+                <img class="g-logo" src="./images/g-logo/item03_wow_logo.png" alt="로고">
+              </div>
+              <!-- //이미지/비디오 영역 -->
+              <h3 class="g-title">월드 오브 워크래프트</h3>
+              <p class="type">MMORPG</p>
+              <!-- 게임스토어 리스트 -->
+              <ul class="downloadable">
+                <li class="battle-net">
+                  <a href="javascript:0">
+                    <img src="./images/icons/bnet-logo_grey.svg" alt="배틀넷">
+                  </a>
+                </li>
+              </ul>
+              <!-- //게임스토어 리스트 -->
+            </a>
+          </li>
+          <!-- //월드 오브 워크래프트 -->
+
+          <!-- 오버워치2 -->
+          <li class="overwatch2 pc console">
+            <a href="javascript:0">
+              <!-- 이미지/비디오 영역 -->
+              <div class="multi-box">
+                <video class="g-video" src="./medias/overwatch.webm" muted></video>
+                <img class="poster" src="./images/g-img/overwatch2.jpg" alt="포스터">
+                <img class="g-logo" src="./images/g-logo/item04_overwatch2_logo.png" alt="로고">
+              </div>
+              <!-- //이미지/비디오 영역 -->
+              <h3 class="g-title">오버워치 2</h3>
+              <p class="type">팀 기반 액션 게임</p>
+              <!-- 게임스토어 리스트 -->
+              <ul class="downloadable">
+                <li class="battle-net">
+                  <a href="javascript:0">
+                    <img src="./images/icons/bnet-logo_grey.svg" alt="배틀넷">
+                  </a>
+                </li>
+                <li class="xbox">
+                  <a href="javascript:0">
+                    <i class="fa-brands fa-xbox"></i>
+                  </a>
+                </li>
+                <li class="playstation">
+                  <a href="javascript:0">
+                    <i class="fa-brands fa-playstation"></i>
+                  </a>
+                </li>
+                <li class="nintendo">
+                  <a href="javascript:0">
+                    <img src="./images/icons/nintendo.png" alt="닌텐도스위치">
+                  </a>
+                </li>
+                <li class="steam">
+                  <a href="javascript:0">
+                    <i class="fa-brands fa-steam"></i>
+                  </a>
+                </li>
+              </ul>
+              <!-- //게임스토어 리스트 -->
+            </a>
+          </li>
+          <!-- //오버워치2 -->
+
+          <!-- 하스스톤 -->
+          <li class="hearthstone pc mobile">
+            <a href="javascript:0">
+              <!-- 이미지/비디오 영역 -->
+              <div class="multi-box">
+                <video class="g-video" src="./medias/hearthstone.webm" muted></video>
+                <img class="poster" src="./images/g-img/hearthstone.jpg" alt="포스터">
+                <img class="g-logo" src="./images/g-logo/item05_hearthstone_logo.png" alt="로고">
+              </div>
+              <!-- //이미지/비디오 영역 -->
+              <h3 class="g-title">하스스톤</h3>
+              <p class="type">전략 카드 게임</p>
+              <!-- 게임스토어 리스트 -->
+              <ul class="downloadable">
+                <li class="battle-net">
+                  <a href="javascript:0">
+                    <img src="./images/icons/bnet-logo_grey.svg" alt="배틀넷">
+                  </a>
+                </li>
+                <li class="app-store">
+                  <a href="javascript:0">
+                    <i class="fa-brands fa-apple"></i>
+                  </a>
+                </li>
+                <li class="google-play">
+                  <a href="javascript:0">
+                    <i class="fa-brands fa-google-play"></i>
+                  </a>
+                </li>
+              </ul>
+              <!-- //게임스토어 리스트 -->
+            </a>
+          </li>
+          <!-- //하스스톤 -->
+
+          <!-- WOW CLASSIC -->
+          <li class="wow-classic pc">
+            <a href="javascript:0">
+              <!-- 이미지/비디오 영역 -->
+              <div class="multi-box">
+                <video class="g-video" src="./medias/wow_classic.webm" muted></video>
+                <img class="poster" src="./images/g-img/wow_classic.jpg" alt="포스터">
+                <img class="g-logo" src="./images/g-logo/item06_wow_classic_logo.png" alt="로고">
+              </div>
+              <!-- //이미지/비디오 영역 -->
+              <h3 class="g-title">월드 오브 워크래프트 클래식</h3>
+              <p class="type">MMORPG</p>
+              <!-- 게임스토어 리스트 -->
+              <ul class="downloadable">
+                <li class="battle-net">
+                  <a href="javascript:0">
+                    <img src="./images/icons/bnet-logo_grey.svg" alt="배틀넷">
+                  </a>
+                </li>
+              </ul>
+              <!-- //게임스토어 리스트 -->
+            </a>
+          </li>
+          <!-- //WOW CLASSIC -->
+
+          <!-- 디아블로 이모탈 -->
+          <li class="immortal mobile">
+            <a href="javascript:0">
+              <!-- 이미지/비디오 영역 -->
+              <div class="multi-box">
+                <video class="g-video" src="./medias/diablo_immortal.webm" muted></video>
+                <img class="poster" src="./images/g-img/diablo_immortal.jpg" alt="포스터">
+                <img class="g-logo" src="./images/g-logo/item07_diablo_immortal_logo.png" alt="로고">
+              </div>
+              <!-- //이미지/비디오 영역 -->
+              <h3 class="g-title">디아블로 이모탈</h3>
+              <p class="type">액션 RPG</p>
+              <!-- 게임스토어 리스트 -->
+              <ul class="downloadable">
+                <li class="battle-net">
+                  <a href="javascript:0">
+                    <img src="./images/icons/bnet-logo_grey.svg" alt="배틀넷">
+                  </a>
+                </li>
+                <li class="app-store">
+                  <a href="javascript:0">
+                    <i class="fa-brands fa-apple"></i>
+                  </a>
+                </li>
+                <li class="google-play">
+                  <a href="javascript:0">
+                    <i class="fa-brands fa-google-play"></i>
+                  </a>
+                </li>
+              </ul>
+              <!-- //게임스토어 리스트 -->
+            </a>
+          </li>
+          <!-- //디아블로 이모탈 -->
+
+          <!-- 디아블로 II: 레저렉션 -->
+          <li class="diablo2 pc console">
+            <a href="javascript:0">
+              <!-- 이미지/비디오 영역 -->
+              <div class="multi-box">
+                <video class="g-video" src="./medias/diablo2.webm" muted></video>
+                <img class="poster" src="./images/g-img/diablo2.jpg" alt="포스터">
+                <img class="g-logo" src="./images/g-logo/item08_DIABLO2_Logo.png" alt="로고">
+              </div>
+              <!-- //이미지/비디오 영역 -->
+              <h3 class="g-title">디아블로 II: 레저렉션</h3>
+              <p class="type">액션 RPG</p>
+              <!-- 게임스토어 리스트 -->
+              <ul class="downloadable">
+                <li class="battle-net">
+                  <a href="javascript:0">
+                    <img src="./images/icons/bnet-logo_grey.svg" alt="배틀넷">
+                  </a>
+                </li>
+                <li class="xbox">
+                  <a href="javascript:0">
+                    <i class="fa-brands fa-xbox"></i>
+                  </a>
+                </li>
+                <li class="playstation">
+                  <a href="javascript:0">
+                    <i class="fa-brands fa-playstation"></i>
+                  </a>
+                </li>
+                <li class="nintendo">
+                  <a href="javascript:0">
+                    <img src="./images/icons/nintendo.png" alt="닌텐도스위치">
+                  </a>
+                </li>
+              </ul>
+              <!-- //게임스토어 리스트 -->
+            </a>
+          </li>
+          <!-- //디아블로 II: 레저렉션 -->
+
+          <!-- 워크래프트 III: 리포지드 -->
+          <li class="warcraft3 pc">
+            <a href="javascript:0">
+              <!-- 이미지/비디오 영역 -->
+              <div class="multi-box">
+                <video class="g-video" src="./medias/warcraft3.webm" muted></video>
+                <img class="poster" src="./images/g-img/warcraft3.jpg" alt="포스터">
+                <img class="g-logo" src="./images/g-logo/item09_warcraft_logo.png" alt="로고">
+              </div>
+              <!-- //이미지/비디오 영역 -->
+              <h3 class="g-title">워크래프트 III: 리포지드</h3>
+              <p class="type">실시간 전략</p>
+              <!-- 게임스토어 리스트 -->
+              <ul class="downloadable">
+                <li class="battle-net">
+                  <a href="javascript:0">
+                    <img src="./images/icons/bnet-logo_grey.svg" alt="배틀넷">
+                  </a>
+                </li>
+              </ul>
+              <!-- //게임스토어 리스트 -->
+            </a>
+          </li>
+          <!-- //워크래프트 III: 리포지드 -->
+
+          <!-- 스타크래프트 II -->
+          <li class="starcraft2 pc">
+            <a href="javascript:0">
+              <!-- 이미지/비디오 영역 -->
+              <div class="multi-box">
+                <video class="g-video" src="./medias/startcraft2.webm" muted></video>
+                <img class="poster" src="./images/g-img/starcraft2.jpg" alt="포스터">
+                <img class="g-logo" src="./images/g-logo/item10_starcraft2_logo.png" alt="로고">
+              </div>
+              <!-- //이미지/비디오 영역 -->
+              <h3 class="g-title">스타크래프트 II</h3>
+              <p class="type">실시간 전략</p>
+              <!-- 게임스토어 리스트 -->
+              <ul class="downloadable">
+                <li class="battle-net">
+                  <a href="javascript:0">
+                    <img src="./images/icons/bnet-logo_grey.svg" alt="배틀넷">
+                  </a>
+                </li>
+              </ul>
+              <!-- //게임스토어 리스트 -->
+            </a>
+          </li>
+          <!-- //스타크래프트 II -->
+        </ul>
+        <!-- //GRID AREA : GAME LIST -->
+        <!-- button area -->
+        <div class="btn-box">
+          <a class="btn1" href="javascript:0">모든 게임 보기</a>
+        </div>
+        <!-- //button area -->
+      </div>
+      <!-- //.inner-container -->
+    </section>
+    
+  </div>
+  <!-- //container -->
+
+  <!-- container2 -->
+  <div class="container2">
+    <!-- 배틀넷 다운로드 배너 -->
+    <section class="banner">
+      <div class="inner-container">
+        <div class="banner-box">
+          <img class="banner-logo" src="./images/battlenet_Logo.png" alt="">
+          <div class="text">
+            <h2>
+              Battle.net을 다운로드하세요
+            </h2>
+            <p>모든 블리자드 게임을 한 곳에서 플레이하세요</p>
+          </div>
+          <div class="btn-box">
+            <a class="btn1" href="javascript:0">다운로드</a>
+            <a class="btn2" href="javascript:0">자세히 보기</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //배틀넷 다운로드 배너 -->
+  </div>
+  <!-- //container2 -->
+
+  <!-- footer -->
+  <footer>
+    <div class="inner-container">
+      <!-- 언어선택 -->
+      <div class="language">
+        <i class="fa-solid fa-earth-americas"></i>
+        <p>한국어</p>
+        <div class="sel-icon">
+          <i class="fa-solid fa-angle-up"></i>
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+      </div>
+      <!-- //언어선택 -->
+
+      <!-- 로고 -->
+      <div? class="f-logo">
+        <a class="logo" href="javascript:0">
+          <img src="./images/blizzard_logo_hover.svg" alt="Blizzard">
+          <img src="./images/blizzard_logo.svg" alt="Blizzard">
+        </a>
+        <p>ENTERTAINMENT</p>
+      </div>
+      <!-- //로고 -->
+
+      <!-- f-menu -->
+      <ul class="f-menu">
+        <li>
+          <a href="javascript:0">인재 채용</a>
+        </li>
+        <li>
+          <a href="javascript:0">회사 소개</a>
+        </li>
+        <li>
+          <a href="javascript:0">고객지원</a>
+        </li>
+        <li>
+          <a href="javascript:0">문의 등록</a>
+        </li>
+        <li>
+          <a href="javascript:0">보도 자료</a>
+        </li>
+        <li>
+          <a href="javascript:0">API</a>
+        </li>
+        <li>
+          <a href="javascript:0">사이트맵</a>
+        </li>
+        <li>
+          <a href="javascript:0">BATTLE.NET PC방</a>
+        </li>
+      </ul>
+      <!-- //f-menu -->
+
+      <!-- app text -->
+      <p class="app-txt">
+        한 곳에서 모든 게임을 플레이 할 수 있는
+        <img src="images/icons/bnet-logo.svg" alt="배틀넷">
+        <a href="javascript:0">Battle.net 앱</a>
+      </p>
+      <!-- //app text -->
+
+      <!-- copyright -->
+      <div class="copyright">
+        <div class="txt">
+          <p>©2023 Blizzard Entertainment, Inc.</p>
+          <p>여기서 언급된 다른 모든  <a href="javascript:0">상표</a> 는 각 소유권자들의 자산입니다.</p>
+          <p>Icon made by Freepik from www.flaticon.com</p>
+        </div>
+        <ul class="policy-menu">
+          <li><a href="javascript:0">개인정보 처리방침</a></li>
+          <li><a href="javascript:0">법률 관련 문서</a></li>
+          <li><a href="javascript:0">이용 약관</a></li>
+          <li><a href="javascript:0">쿠키정보 처리방침</a></li>
+          <li><a href="javascript:0">쿠키 설정</a></li>
+        </ul>
+      </div>
+      <!-- //copyright -->
+
+      <!-- company-info -->
+      <div class="company-info">
+        <p>블리자드 엔터테인먼트 유한 회사</p>
+        <p>주소:06164 서울시 강남구 테헤란로 521 파르나스타워 15층</p>
+        <p>
+          대표 번호: 1644-0727 | 팩스 번호: (02)544-3038 | 이메일: 
+          <a href="javascript:0">websupport@blizzard.co.kr</a>
+        </p>
+        <p>
+          사업자 등록 번호: 211-87-49910 | 통신 판매업 신고 번호: 강남-6017호 | 
+          <a href="javascript:0">사업자정보확인</a>
+        </p>
+        <p>대표이사: 매리 아그네스 케틀러 | 개인정보 보호책임자: 이강호</p>
+      </div>
+      <!-- //company-info -->
+    </div>
+    <!-- //inner-container -->
+  </footer>
+  <!-- //footer -->
 </body>
 </html>
