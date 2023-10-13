@@ -8,56 +8,9 @@
   <!-- link -->
   <!-- reset css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+  <link rel="stylesheet" href="./css/index.css">
   <!-- font-awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <!-- 너무 큰 img html 작업중 사이즈 줄이기용 임시 style -->
-  <style>
-    img {
-      width: 50px;
-    }
-    a {
-      outline: 1px solid red;
-      color: white;
-    }
-    body {
-      background-color: #171926;
-    }
-
-
-    .all-games a{
-      display: flex;
-      align-items: center;
-    }
-    .squares-icon {
-      width: 50px;
-      display: grid;
-      grid-template-columns: repeat(2,1fr);
-      grid-template-rows: repeat(2,1fr);
-      gap: 3px;
-    }
-    .squares-icon .square {
-      width: 15px;
-      height: 15px;
-      border: 3px solid white;
-    }
-
-    .logo {
-      position: relative;
-
-    }
-    .logo img {
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-    .logo:hover img:nth-child(2) {
-      opacity: 0;
-    }
-    video {
-      width: 200px;
-    }
-  </style>
 
 </head>
 <body>
@@ -68,7 +21,7 @@
       <img src="./images/blizzard_logo.svg" alt="Blizzard">
     </a>
     <!-- 햄버거 메뉴 -->
-    <a class="hambuger-menu" href="">
+    <a class="hamburger-menu" href="javascript:0">
       <i class="fa-solid fa-bars"></i>
     </a>
     <!-- PC 메뉴 -->
@@ -81,7 +34,7 @@
             <i class="fa-solid fa-angle-down"></i>
           </a>
           <!-- sub-menu -->
-          <ul class="sub-menu">
+          <ul class="sub-menu test">
             <!-- WOW -->
             <li> 
               <a href="javascript:0">
@@ -969,7 +922,7 @@
       <!-- //언어선택 -->
 
       <!-- 로고 -->
-      <div? class="f-logo">
+      <div class="f-logo">
         <a class="logo" href="javascript:0">
           <img src="./images/blizzard_logo_hover.svg" alt="Blizzard">
           <img src="./images/blizzard_logo.svg" alt="Blizzard">

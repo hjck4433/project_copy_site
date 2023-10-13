@@ -1,0 +1,83 @@
+/* google fonts */
+/* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800;900&display=swap');
+
+/* COMMON CSS*******************************/
+* {
+    font-family: "Poppins",Helvetica,Arial,sans-serif;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+}
+a {
+    list-style:none;
+}
+.inner-container {
+    width: 70vw;
+    margin: 0 auto;
+    outline: 1px solid yellow;
+}
+/* //COMMON CSS*******************************/
+
+/* 임시 */
+img {
+    width: 100px;
+}
+
+/* HEADER ************************************/
+header {
+    width: calc(100% - 32px);
+    height: 72px;
+    margin: 0 auto;
+    /* position: fixed;
+    top: 16px;
+    left: 16px; */
+    background-color: #34394B;
+
+    display:flex;
+    flex-direction: row;
+    outline: 1px solid red;
+}
+header>.logo {
+    display: block;
+}
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header>.hamburger-menu {
+    display: none;
+}
+
+/* .menu css 메인메뉴 영역 *************************/
+header > .menu > ul {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(6,1fr);
+    outline: 3px solid yellow;
+}
+header > .menu> ul >li {
+    height: 100%;
+    outline: 3px solid blue;
+}
+header > .menu> ul >li>a {
+    display: flex;
+    outline: 3px solid green;
+}
+header > .menu .sub-menu {
+    display: none;
+}
+header > .menu .test {
+    outline: 5px solid violet;
+    background-color: #171926;
+    width: 280px; 
+    position: absolute;
+}
+
+
+/* //HEADER ************************************/
+.container1, .container2, footer {
+    display: none;
+}
