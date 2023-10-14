@@ -425,7 +425,9 @@ main img {
 
 .container1 {
     background-image: url('../images/bgpc_1.jpg');
-    background-size: cover;
+    background-color: rgba(255,255,255,.3);
+    background-size: auto;
+    background-position: top;
 }
 
 /* main *****************************************/
@@ -658,7 +660,7 @@ main .pagination ul li.active a {
 
 /* 추천게임 */
 .container1 .recomm {
-    
+    padding-bottom: 80px;
 }
 /* 제목 영역 */
 .recomm .section-title {
@@ -693,8 +695,152 @@ main .pagination ul li.active a {
 }
 
 /* //추천게임 */
-
 /*  GRID AREA : GAME LIST ***************/
+.recomm .game-list {
+    display:grid;
+    width: 100%;
+    grid-template-columns: repeat(5,1fr);
+    gap: 30px;
+    margin-bottom: 80px;
+}
+.recomm .game-list>li {
+    width: 100%;
+    /* outline: 1px solid red; */
+}
+.recomm .game-list>li>a {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    /* outline: 3px solid pink; */
+}
+.recomm .game-list>li>a .multi-box {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 5px;
+    transition: .3s ease-in;
+}
+.recomm .game-list>li:hover>a .multi-box {
+    transform: scale(1.05);
+}
+
+/* poster images ************************/
+/* rumble */
+.recomm .game-list>li.rumble>a .multi-box {
+    background-image: url('../images/g-img/warcraft_rumble.jpg');
+    background-size: auto 100%;
+    background-position: top;
+}
+/* diablo4 */
+.recomm .game-list>li.diablo4>a .multi-box {
+    background-image: url('../images/g-img/diablo4.jpg');
+}
+/* wow */
+.recomm .game-list>li.wow>a .multi-box {
+    background-image: url('../images/g-img/wow.jpg');
+}
+/* overwatch2 */
+.recomm .game-list>li.overwatch2>a .multi-box {
+    background-image: url('../images/g-img/overwatch2.jpg');
+}
+/* hearthstone */
+.recomm .game-list>li.hearthstone>a .multi-box {
+    background-image: url('../images/g-img/hearthstone.jpg');
+}
+/* wow-classic */
+.recomm .game-list>li.wow-classic>a .multi-box {
+    background-image: url('../images/g-img/wow_classic.jpg');
+}
+/* immortal */
+.recomm .game-list>li.immortal>a .multi-box {
+    background-image: url('../images/g-img/diablo_immortal.jpg');
+}
+/* diablo2 */
+.recomm .game-list>li.diablo2>a .multi-box {
+    background-image: url('../images/g-img/diablo2.jpg');
+}
+/* warcraft3 */
+.recomm .game-list>li.warcraft3>a .multi-box {
+    background-image: url('../images/g-img/warcraft3.jpg');
+}
+/* starcraft2 */
+.recomm .game-list>li.starcraft2>a .multi-box {
+    background-image: url('../images/g-img/starcraft2.jpg');
+}
+
+.recomm .game-list>li>a .multi-box img {
+    width: 100%;
+}
+
+.recomm .game-list>li>a .multi-box .comming-soon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    border: 3px solid white;
+    background-color: black;
+    color: white;
+    font-size: .8em;
+    font-weight: bold;
+
+}
+.game-list>li>a .multi-box video {
+    display: none;
+    width: 100%;
+    position:absolute;
+    z-index: 3;
+}
+.game-list>li:hover>a .multi-box video {
+    display: block;
+}
+
+.game-list>li>a .g-logo {
+    position: relative;
+    z-index: 4;
+}
+.recomm .game-list>li>a .multi-box .poster {
+    position: absolute;
+}
+
+/* .recomm .game-list>li.rumble>a .multi-box .poster {
+    display:none;
+} */
+
+.recomm .game-list>li>a .g-title{
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.recomm .game-list>li>a .type{
+    color: #8598AC;
+    font-size: .9em;
+    font-weight: bold;
+    letter-spacing: -1.4px;
+    margin-bottom: 10px;
+}
+.recomm .game-list>li>a .downloadable {
+    display: flex;
+    align-items: center;
+    height: 27px;
+}
+.recomm .game-list>li>a .downloadable li {
+    margin-right: 15px;
+}
+.recomm .game-list>li>a .downloadable li img {
+    height: 20px;
+}
+.recomm .game-list>li>a .downloadable li i {
+    color: #8598AC;
+    font-size: 20px;
+}
+
+.recomm .btn-box {
+    display: flex;
+    justify-content: center;
+}
+
 
 
 .container2, footer {
