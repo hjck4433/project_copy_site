@@ -14,7 +14,7 @@ a {
     list-style:none;
 }
 .inner-container {
-    width: 70vw;
+    width: 83vw;
     margin: 0 auto;
     outline: 1px solid yellow;
 }
@@ -23,12 +23,32 @@ a {
     margin-left: 5px;
     color: #898A91;
 }
-/* //COMMON CSS*******************************/
+/* button css **************************************/
+.btn-box button {
+    color: white;
+    background-color: rgba(19, 140, 237);
+    padding: 16px 40px;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 40px;
+    border: 1px solid rgba(255,255,255, .3);
+}
+.btn-box button:hover {
+    cursor:pointer;
+}
+.btn-box .btn2 {
+    background-color: rgba(130, 144, 196, .2);
+    margin-left: 10px;
+}
+.btn-box .btn1:hover {
+    background-color: rgb(74, 161, 231);
+}
+.btn-box .btn2:hover {
+    background-color: rgba(130, 144, 196, .4);
+}
 
-/* 임시 */
-/* img {
-    width: 100px;
-} */
+
+/* //COMMON CSS*******************************/
 
 /* HEADER ************************************/
 header {
@@ -44,7 +64,8 @@ header {
     margin: 0 auto;
     padding-right: 12px;
 
-    background-color: rgba(52, 57, 75);
+    background-color: rgba(26, 32, 53, 0.8);
+    backdrop-filter: blur(10px);
     border-radius: 10px;
 
     position: fixed;
@@ -397,6 +418,286 @@ header .menu2 .download a img {
 }
 
 /* //HEADER ************************************/
-.container1, .container2, footer {
+/* 임시 */
+main img {
+    width: 100px;
+}
+
+.container1 {
+    background-image: url('../images/bgpc_1.jpg');
+    background-size: cover;
+}
+
+/* main *****************************************/
+main {
+    width: 100%;
+    padding-bottom: 70px;
+    overflow: hidden;
+}
+main .inner-container {
+    width: 85vw;
+    height: 720px;
+    position: relative;
+}
+main .slide-wrapper {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    height: 100%;
+    width: 600%;
+
+    position: absolute;
+    top: 0;
+    left: -100%;
+    /* outline: 1px solid yellow; */
+}
+main .slide-wrapper .slide {
+    width: 100%;
+    height: 100%;
+    padding: 0 12px;
+    opacity: .5;
+    transition: .5s;
+}
+main .slide-wrapper .slide.active {
+    opacity: 1;
+}
+main .slide-wrapper .slide:hover {
+    opacity: 1;
+}
+main .slide-wrapper>.slide>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-left: 10%;
+    background-size:cover;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 1px 2px 10px black;
+}
+main .slide-wrapper>.slide>a>.text>h2 {
+    font-size: 3.8em;
+    font-weight: bold;
+    line-height: 1.1;
+}
+/* slide CSS ********************************/
+/* diablo4 */
+main .slide-wrapper>.diablo4>a {
+    background-image: url('../images/main_diablo_4_pc.jpg');
+    background-position: center;
+}
+main .slide-wrapper>.diablo4>a {
+    padding-top: 150px;
+}
+main .slide-wrapper>.diablo4>a .slide-logo{
+    width: 300px;
+    margin-bottom: 20px;
+}
+main .slide-wrapper>.diablo4>a .text {
+    margin-bottom: 40px;
+}
+main .slide-wrapper>.diablo4>a .btn-box {
+    width: 100%;
+}
+
+/* overwatch2 */
+main .slide-wrapper>.overwatch2>a {
+    background-image: url('../images/main_overwatch_pc.jpg');
+    background-position: right;
+    padding-top: 120px;
+}
+
+main .slide-wrapper>.overwatch2>a .slide-logo {
+    width: 230px;
+    margin-bottom: 10px;
+}
+main .slide-wrapper>.overwatch2>a .text{
+    margin-bottom: 30px;
+}
+
+/* blizzcon */
+main .slide-wrapper>.blizzcon>a {
+    background-image: url('../images/main_blizzcon_pc.jpg');
+    background-position: center;
+    padding-top: 140px;
+}
+main .slide-wrapper>.blizzcon>a .slide-logo {
+    width: 280px;
+    margin-bottom: 20px;
+}
+main .slide-wrapper>.blizzcon>a .text{
+    text-shadow: 1px 3px 4px #666;
+    margin-bottom: 60px;
+}
+main .slide-wrapper>.blizzcon>a .text h2 {
+    margin-bottom: 30px;
+}
+main .slide-wrapper>.blizzcon>a .text>p{
+    font-size: 1.4em;
+    opacity: .8;
+}
+ 
+/* wow classic */
+main .slide-wrapper>.wow-classic>a {
+    background-image: url('../images/main_wow_pc.jpg');
+    background-position: right;
+    padding-top: 160px;
+}
+main .slide-wrapper>.wow-classic>a .slide-logo {
+    width: 340px;
+    margin-bottom: 20px;
+}
+main .slide-wrapper>.wow-classic>a .text{
+    text-shadow: 1px 3px 4px #333;
+    letter-spacing: -2px;
+    margin-bottom: 50px;
+}
+
+/* rumble */
+main .slide-wrapper>.rumble>a {
+    background-image: url('../images/main_warcraft_rumble_pc.jpg');
+    background-position: right;
+    padding-top: 140px;
+}
+main .slide-wrapper>.rumble>a .slide-logo{
+    width: 340px;
+    margin-bottom: 20px;
+}
+main .slide-wrapper>.rumble>a .text {
+    text-shadow: 1px 3px 4px #666;
+    letter-spacing: -4px;
+    margin-bottom: 40px;
+}
+
+/* immortal */
+main .slide-wrapper>.immortal>a {
+    background-image: url('../images/main_diablo_immotal_pc.jpg');
+    background-position: right;
+    padding-top: 120px;
+}
+main .slide-wrapper>.immortal>a .slide-logo {
+    width: 340px;
+    margin-bottom: 20px;
+}
+main .slide-wrapper>.immortal>a .text {
+    margin-bottom: 40px;
+}
+main .slide-wrapper>.immortal>a .text p {
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #D0D0CE;
+    line-height: 1.4;
+    margin-top: 30px;
+}
+
+/* slide 화살표 *************************/
+main .arr-btn {
+    position: relative;
+    top: 54%;
+}
+main .arr-btn a {
+    width: 60px;
+    height: 60px;
+    text-decoration: none;
+    border-radius: 100%;
+    background-color:#333B4B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+}
+main .arr-btn a:hover {
+    background-color: #484F5D;
+}
+main .arr-btn .prev {
+    left: -30px;
+}
+main .arr-btn .next {
+    right: -30px;
+}
+main .arr-btn a i {
+    color: #fff;
+    font-size: 1.2em;
+}
+
+/* 페이지네이션 **********************************/
+main .pagination {
+    display: flex;
+    width: 42%;
+    position: absolute;
+    bottom: 30px;
+    left: 29%;
+}
+main .pagination ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 16px;
+    gap: 20px;
+}
+main .pagination ul li {
+    display: flex;
+    align-items: center;
+}
+main .pagination ul li:hover a{
+    background-color: white;
+}
+main .pagination ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #8697AA;
+    border-radius: 4px;
+    height: 12px;
+}
+main .pagination ul li.active a {
+    height: 100%;
+    background-color: white;
+    border-radius: 5px;
+}
+/* //main ***************************************/
+
+/* 추천게임 */
+.container1 .recomm {
+    
+}
+/* 제목 영역 */
+.recomm .section-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.recomm .section-title h2{
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #ddd;
+}
+.recomm .section-title .playable {
+    display: flex;
+}
+.recomm .section-title .playable li {
+    margin-left: 10px;
+}
+.recomm .section-title .playable li a {
+    display: block;
+    padding: 8px 22px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+
+    background-color: rgba(255,255,255, .2);
+    border-radius: 20px;
+}
+.recomm .section-title .playable li a:hover {
+    background-color: rgba(255,255,255, .4);
+}
+
+/* //추천게임 */
+
+/*  GRID AREA : GAME LIST ***************/
+
+
+.container2, footer {
     display: none;
 }
+
