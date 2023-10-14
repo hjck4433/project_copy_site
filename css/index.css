@@ -18,64 +18,383 @@ a {
     margin: 0 auto;
     outline: 1px solid yellow;
 }
+.fa-angle-down {
+    font-size: .5em;
+    margin-left: 5px;
+    color: #898A91;
+}
 /* //COMMON CSS*******************************/
 
 /* 임시 */
-img {
+/* img {
     width: 100px;
-}
+} */
 
 /* HEADER ************************************/
 header {
+    /* display:flex;
+    flex-direction: row;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: 1fr 8fr 6fr;
+    grid-template-rows: 72px;
+
     width: calc(100% - 32px);
     height: 72px;
     margin: 0 auto;
-    /* position: fixed;
-    top: 16px;
-    left: 16px; */
-    background-color: #34394B;
+    padding-right: 12px;
 
-    display:flex;
-    flex-direction: row;
-    outline: 1px solid red;
-}
-header>.logo {
-    display: block;
+    background-color: rgba(52, 57, 75);
+    border-radius: 10px;
+
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    z-index: 999;
+    
 }
 header a {
     color: #fff;
     text-decoration: none;
 }
 
+/* logo CSS**************/
+header>.logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 4px;
+    position: relative;
+}
+header>.logo>img {
+    height: 38px;
+    display: block;
+}
+header>.logo>img:first-child {
+    position: absolute;
+    opacity: 0;
+    transition: .3s ease-in;
+}
+header>.logo:hover img:first-child {
+    opacity: 1;
+}
+
 header>.hamburger-menu {
     display: none;
 }
 
-/* .menu css 메인메뉴 영역 *************************/
+/* 메인메뉴 영역 *******************************************/
+header > .menu {
+    display: flex;
+    align-items: center;
+}
+header > .menu h3 {
+    font-weight: bold;
+}
+
+header > .menu h3, header > .menu h4 {
+    font-size: 1.2em;
+}
 header > .menu > ul {
-    display: grid;
-    height: 100%;
-    grid-template-columns: repeat(6,1fr);
-    outline: 3px solid yellow;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
 }
 header > .menu> ul >li {
-    height: 100%;
-    outline: 3px solid blue;
+    height: 42px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+header > .menu> ul >li.more {
+    border-radius: 10px;
+    margin-left: 15px;
+    background-color: rgba(255,255,255,.1);
 }
 header > .menu> ul >li>a {
     display: flex;
-    outline: 3px solid green;
+    align-items: center;
+    padding: 12px 16px;
+    border-radius: 10px;
+    transition: .4s;
 }
-header > .menu .sub-menu {
-    display: none;
-}
-header > .menu .test {
-    outline: 5px solid violet;
-    background-color: #171926;
-    width: 280px; 
-    position: absolute;
+header > .menu> ul >li>a:hover {
+    background-color: rgba(255,255,255,.1);
 }
 
+/* 메인메뉴 > 서브 메뉴 CSS *********************************************/
+header > .menu> ul> li> .sub-menu {
+    display:block;
+    display:none;
+    width: 336px;
+    /* opacity: 0; */
+    padding: 12px;
+    background-color: #171926;
+    border-radius: 10px;
+    position: absolute;
+    top: 62px;
+    transition: .8s;
+}
+
+header > .menu> ul> li> .sub-menu .g-type span {
+    background-color: #1FB8FF;
+    color: #171926;
+    border-radius: 3px;
+    font-size: .5em;
+    font-weight: bold;
+    padding: 1px 5px;
+}
+
+header > .menu> ul> li> .more {
+    /* display: block; */
+    padding-bottom: 30px;
+}
+/* 모든 게임 메뉴 CSS */
+header > .menu> ul> li> .more .all-games {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    background-color: #0C94EC;
+}
+
+header > .menu> ul> li> .more .all-games a {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    width: 100%;
+    height: 100%;
+    font-size: .9em;
+}
+header > .menu> ul> li> .more .all-games a:hover {
+    background-color: rgba(255,255,255,.2);
+}
+
+header > .menu> ul> li> .more .all-games a .squares-icon {
+    display: grid;
+    width: 22px;
+    height: 22px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2px;
+    margin-right: 10px;
+}
+header > .menu> ul> li> .more .all-games a .squares-icon .square {
+    width: 100%;
+    height: 100%;
+    border: 2px solid white;
+    border-radius: 2px;
+}
+
+
+header > .menu>ul>li:hover .sub-menu {
+    display:block;
+    height: auto;
+    opacity: 1;
+}
+header > .menu .sub-menu::before {
+    display:block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg) translateX(-12px);
+    background-color: #171926;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: -1;
+}
+header>.menu .sub-menu>li {
+    border-radius: 5px;
+}
+header>.menu .sub-menu>li:hover {
+    background-color: rgba(255,255,255,.1)
+}
+header>.menu .sub-menu>li>a {
+    padding: 12px;
+    height: 100%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+header>.menu .sub-menu>li>a .sub-icon {
+    width: 48px;
+    margin-right: 10px;
+}
+header>.menu .sub-menu>li>a .g-type {
+    font-size: .8em;
+    color: #898A91;
+    margin-top: 5px;
+}
+
+
+/* menu2 **********************************************************/
+header > .menu2 {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+header > .menu2 h3 {
+    font-weight: bold;
+    font-size: 1em;
+}
+header > .menu2 h4 {
+    font-size: 1.2em;
+}
+header > .menu2 > ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+header > .menu2 > ul >li {
+    height: 42px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+header > .menu2> ul >li>a {
+    display: flex;
+    align-items: center;
+    padding: 12px 14px;
+    border-radius: 8px;
+    transition: .4s;
+}
+header > .menu2> ul >li>a:hover {
+    background-color: rgba(255,255,255,.1);
+}
+
+header > .menu2> ul >li.account>a>i {
+    color: #A19AA2;
+    margin-right: 8px;
+}
+/* menu2 sub-menu *******************************************/
+
+header > .menu2> ul> li> .menu2_sub {
+    display:block;
+    display:none;
+    width: 336px;
+    /* opacity: 0; */
+    padding: 12px;
+    background-color: #171926;
+    border-radius: 10px;
+    position: absolute;
+    top: 62px;
+    transition: .8s;
+}
+header >.menu2> ul>li> .test {
+    display: block;
+}
+header > .menu2> ul >li.account> .menu2_sub {
+    width: 320px;
+    padding-top: 26px;
+}
+
+header > .menu2>ul>li:hover .menu2_sub {
+    display:block;
+    height: auto;
+    opacity: 1;
+}
+header > .menu2 .menu2_sub::before {
+    display:block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg) translateX(-12px);
+    background-color: #171926;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: -1;
+}
+header>.menu2 .menu2_sub>li {
+    border-radius: 5px;
+}
+header>.menu2 .menu2_sub>li:hover {
+    background-color: rgba(255,255,255,.1)
+}
+header>.menu2 .menu2_sub>li>a {
+    padding: 12px;
+    height: 100%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+header>.menu2 .menu2_sub>li>a .sub-icon {
+    display: flex;
+    justify-content: center;
+    width: 24px;
+    margin-right: 15px;
+    color: #898A91;
+}
+header>.menu2 .menu2_sub>li>a i {
+    font-size: 1.3em;
+}
+header>.menu2 .menu2_sub>li>a>h4 {
+    display: flex;
+}
+header>.menu2 .menu2_sub>li>a>h4>i {
+    font-size: .5em;
+    margin-left: 3px;
+    color: #898A91;
+    transform: rotate(45deg);
+}
+
+header > .menu2> ul> li> .menu2_sub>li>a>h4>span {
+    background-color: #1FB8FF;
+    color: #171926;
+    border-radius: 3px;
+    font-size: .7em;
+    font-weight: bold;
+    padding: 2px 3px;
+    margin-left: 10px;
+}
+/* account CSS **********************/
+header > .menu2> ul> li.account> .menu2_sub>li>a>i {
+    color: #898A91;
+    margin-right: 10px;
+}
+
+/* login 메뉴 CSS */
+header > .menu2> ul> li> .menu2_sub> .login {
+    background-color: #0C94EC;
+    margin-bottom: 26px;
+}
+header > .menu2> ul> li> .menu2_sub> .login a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: .8em;
+}
+header > .menu2> ul> li> .menu2_sub> .login a:hover {
+    background-color: rgba(255,255,255,.2);
+}
+header > .menu2> ul> li> .menu2_sub> .login a img {
+    width: 22px;
+    margin-right: 10px;
+}
+/* 다운로드 버튼 CSS *****************************/
+header .menu2 .download a {
+    height: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: black;
+    margin-left: 15px;
+}
+header .menu2 .download a:hover {
+    background-color: black;
+}
+header .menu2 .download a img {
+    height: 22px;
+    margin-right: 10px;
+}
 
 /* //HEADER ************************************/
 .container1, .container2, footer {
