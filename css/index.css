@@ -1412,6 +1412,11 @@ main .pagination ul li.active a {
         background-size: auto;
         background-position: top;
     }
+    .container2 {
+        background-image: url('../images/bgmo_2.jpg');
+        background-size: auto;
+        background-position: top;
+    }
 
     .recomm .game-list {
         grid-template-columns: repeat(3,1fr);
@@ -1435,6 +1440,11 @@ main .pagination ul li.active a {
     .container1 {
         background-image: url('../images/bgmo_1_1.jpg');
         background-size: auto;
+    }
+    .container2 {
+        background-image: url('../images/bgmo_2_1.jpg');
+        background-size: auto;
+        background-position: top;
     }
     .recomm .section-title {
         display: flex;
