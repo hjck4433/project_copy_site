@@ -12,7 +12,7 @@ body {
     overflow-x: hidden;
 }
 a {
-    list-style:none;
+    text-decoration:none;
 }
 .inner-container {
     width: 83vw;

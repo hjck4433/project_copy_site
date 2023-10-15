@@ -1,11 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Battle.net 계정 로그인</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Battle.net 계정 로그인</title>
+
+  <!-- link -->
+  <!-- favicon -->
+  <link rel="icon" href="../images/icons/bnet-logo.svg" type="image/x-icon">
+  
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- reset css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+  <link rel="stylesheet" href="../css/login.css">
+
 </head>
 <body>
-    
+  <div class="container">
+    <img src="../images/battlenet_Logo.png" alt="" class="bnetlogo">
+    <form action="#">
+      <legend>로그인</legend>
+      <fieldset class="social">
+        <ul class="social-box1">
+          <li>
+            <a href="javascript:0">
+              <img src="../images/login/google-logo-color.svg" alt="구글로그인">
+            </a>
+          </li>
+          <li>
+            <a href="javascript:0">
+              <img src="../images/login/facebook-logo-white.svg" alt="페이스북로그인">
+            </a>
+          </li>
+          <li>
+            <a href="javascript:0">
+              <img src="../images/login/apple-logo-black.svg" alt="애플로그인">
+            </a>
+          </li>
+        </ul>
+        <ul class="social-box2">
+          <li>
+            <a href="javascript:0">
+              <img src="../images/login/xbox-logo-white.svg" alt="엑스박스로그인">
+            </a>
+          </li>
+          <li>
+            <a href="javascript:0">
+              <img src="../images/login/playstation-logo-white.svg" alt="플레이스테이션로그인">
+            </a>
+          </li>
+          <li>
+            <a href="javascript:0">
+              <img src="../images/login/switch-logo-white.svg" alt="닌텐도스위치로그인">
+            </a>
+          </li>
+          <li>
+            <a href="javascript:0">
+              <img src="../images/login/steam-logo-black.svg" alt="스팀로그인">
+            </a>
+          </li>
+        </ul>
+      </fieldset>
+      <div class="line">
+        <hr>
+        <span>또는</span>
+      </div>
+      <fieldset class="bnet-account">
+        <input type="text" id="user-id" placeholder="이메일 또는 휴대전화번호">
+        <label for="user-id"></label>
+        <input type="passowrd" id="password" placeholder="비밀번호">
+        <label for="password"></label>
+      </fieldset>
+      <a href="../index.html">로그인</button>
+    </form>
+    <ul class="new_help">
+      <li><a href="javascript:0">Battle.net 무료 회원 가입</a></li>
+      <li><a href="javascript:0">로그인 문제 해결 <i class="fa-solid fa-up-right-from-square"></i></a></li>
+      <li><a href="javascript:0">탈퇴한 계정 복구 <i class="fa-solid fa-up-right-from-square"></i></a></li>
+    </ul>
+    <footer>
+      <div class="copyright">
+        <ul class="policy-menu">
+          <li><a href="javascript:0">BLIZZARD 최종 라이선스 계약</a></li>
+          <li><a href="javascript:0">개인정보 처리방침</a></li>
+          <li><a href="javascript:0">법률 관련 문서</a></li>
+          <li><a href="javascript:0">이용 약관</a></li>
+          <li><a href="javascript:0">쿠키정보 처리방침</a></li>
+          <li><a href="javascript:0">쿠키 설정</a></li>
+        </ul>
+        <p>©2023 BLIZZARD ENTERTAINMENT, INC. 모든 권리는 BLIZZARD ENTERTAINMENT에 있습니다.</p>
+      </div>
+      <div class="info">
+        블리자드 엔터테인먼트 유한 회사 <br>
+        주소: 06164 서울시 강남구 테헤란로 521 파르나스타워 15층 <br>
+        대표 번호: 1644-0727 | 팩스 번호: (02)544-3038 | 이메일: <a href="javascript:0">WEBSUPPORT@BLIZZARD.CO.KR</a><br>
+        사업자 등록 번호: 211-87-49910 | 통신 판매업 신고 번호: 강남-6017호 | <a href="javascript:0">사업자정보확인</a><br>
+        대표이사: 다니엘 알레그레 | 개인정보 보호책임자: 이강호
+      </div>
+    </footer>
+
+  </div>
 </body>
 </html>
