@@ -424,10 +424,14 @@ main img {
 }
 
 .container1 {
+    position: relative;
     background-image: url('../images/bgpc_1.jpg');
     background-color: rgba(255,255,255,.3);
     background-size: auto;
     background-position: top;
+
+    box-shadow: 3px 2px 20px #222;
+    z-index: 3;
 }
 
 /* main *****************************************/
@@ -841,9 +845,48 @@ main .pagination ul li.active a {
     justify-content: center;
 }
 
+/* container2 ****************************************************/
+.container2 {
+    width: 100%;
+    padding: 80px 0;
+    background-image: url('../images/bgpc_2.jpg');
+    background-size: auto;
+    background-position: top left;
 
+}
+/* .banner **********************************************/
+.banner {
 
-.container2, footer {
+}
+.banner>.inner-container {
+    background-image:url('../images/bg_section2_pc.jpg');
+    background-size: 100% auto;
+    background-position: fixed;
+    border-radius: 10px;
+    box-shadow: 2px 3px 10px #111;
+}
+.banner>.inner-container>.banner-box {
+    height: 640px;
+    padding-left: 10%;
+    padding-top: 120px;
+}
+.banner>.inner-container>.banner-box .text {
+    margin-bottom: 40px;
+}
+.banner>.inner-container>.banner-box .text h2 {
+    font-size: 3.6em;
+    font-weight: bold;
+    color: #eee;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.banner>.inner-container>.banner-box .text p {
+    font-size: 1.5em;
+    letter-spacing: -1.5px;
+    color: #bbb;
+}
+/* footer */
+footer {
     display: none;
 }
 
