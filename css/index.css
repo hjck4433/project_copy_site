@@ -16,7 +16,7 @@ a {
 .inner-container {
     width: 83vw;
     margin: 0 auto;
-    outline: 1px solid yellow;
+    /* outline: 1px solid yellow; */
 }
 .fa-angle-down {
     font-size: .5em;
@@ -885,8 +885,209 @@ main .pagination ul li.active a {
     letter-spacing: -1.5px;
     color: #bbb;
 }
-/* footer */
-footer {
-    display: none;
+/* footer **********************************/
+footer img {
+    width: 20px;
 }
 
+footer {
+    background-color: #171717;
+    color: #ddd;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+/* language */
+footer .language a{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    color: #ccc;
+    text-decoration: none;
+    height: 20px;
+}
+footer .language a> i {
+    font-size: 1.2em;
+    margin-right: 8px;
+    color: #009DFF;
+}
+footer .language a:hover {
+    color: #eee;
+}
+footer .language a:hover> i {
+    color: #66C4FF;
+}
+
+footer .language a> .sel-icon {
+    display: flex;
+    flex-direction: column;
+    flex-basis:top;
+    margin-left: 8px;
+    flex-wrap: wrap;
+    height: 14px;
+    align-self: flex-start;
+}
+footer .language a> .sel-icon i {
+    font-size: .1em;
+    height: 50%;
+    color: #ccc;
+    margin: 0;
+}
+
+/* f-logo */
+footer .f-logo {
+    width: 122px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+footer .f-logo .logo {
+    width: 100%;
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+}
+footer .f-logo .logo img {
+    width: 100%;
+}
+footer .f-logo .logo img:first-child {
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: .4s ease-in-out;
+}
+footer .f-logo:hover .logo img:first-child{
+    opacity: 1;
+}
+footer .f-logo p {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+footer .f-logo p span {
+    font-size: .2em;
+}
+
+/* f-menu */
+footer .f-menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+footer .f-menu li {
+    padding: 0 10px;
+    position: relative;
+}
+footer .f-menu li::after {
+    display:block;
+    content: "";
+    height: 70%;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    border-right: 1px solid #ccc;
+}
+footer .f-menu li:last-child::after {
+    display: none;
+}
+footer .f-menu li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: .2s ease-in;
+}
+footer .f-menu li a:hover {
+    color: #eee;
+}
+
+/* app-txt */
+footer .app-txt {
+    display: flex;
+    justify-content: center;
+    color: #bbb;
+    margin-bottom: 40px;
+}
+footer .app-txt img {
+    margin-left: 8px;
+    margin-right: 5px;
+    width: 16px;
+}
+footer .app-txt a {
+    color: #009DFF;
+    transition: .3s ease-in;
+}
+footer .app-txt a:hover {
+    color: #66C4FF;
+}
+
+/* .copyright */
+footer .copyright {
+    margin-bottom: 30px;
+}
+footer .copyright .txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+
+    line-height: 1.3;
+    font-size: .8em;
+    letter-spacing: -.8px;
+    color: #6D6D6D;
+}
+footer .copyright .txt a {
+    margin-left: 5px;
+    color: #ccc;
+    transition: .3s ease-in;
+}
+footer .copyright .txt a:hover {
+    color:#eee;
+}
+footer .copyright .policy-menu {
+    display: flex;
+    justify-content: center;
+}
+footer .copyright .policy-menu li {
+    padding: 0 10px;
+    position: relative;
+}
+footer .copyright .policy-menu li::after {
+    display:block;
+    content: "";
+    height: 70%;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    border-right: 1px solid #ccc;
+}
+footer .copyright .policy-menu li:last-child::after {
+    display: none;
+}
+footer .copyright .policy-menu li a {
+    color: #ccc;
+    font-size: .8em;
+    text-decoration: none;
+    transition: .2s ease-in;
+}
+footer .copyright .policy-menu li a:hover {
+    color: #eee;
+}
+/* .company-info */
+footer .company-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: .7em;
+    line-height: 1.4;
+    color: #aaa;
+}
+footer .company-info p a {
+    text-decoration: none;
+    color: #aaa;
+    font-weight: bold;
+    transition: .3s ease-in;
+}
+footer .company-info p a:hover {
+    color: #eee;
+}
