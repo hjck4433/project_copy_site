@@ -9,7 +9,7 @@
 }
 body {
     width: 100%;
-    outline: 1px solid cyan;
+    overflow-x: hidden;
 }
 a {
     list-style:none;
@@ -19,6 +19,17 @@ a {
     margin: 0 auto;
     /* outline: 1px solid yellow; */
 }
+@media only screen and (max-width:1199px) {
+    .inner-container {
+        width: 95vw;
+    }
+}
+@media only screen and (max-width:719px) {
+    .inner-container {
+        width: 90vw;
+    }
+}
+
 .fa-angle-down {
     font-size: .5em;
     margin-left: 5px;
@@ -47,7 +58,12 @@ a {
 .btn-box .btn2:hover {
     background-color: rgba(130, 144, 196, .4);
 }
-
+@media only screen and (max-width:719px) {
+    .btn-box button {
+        font-size: 1.2em;
+        padding: 16px 30px;
+    }
+}
 
 /* //COMMON CSS*******************************/
 
@@ -1097,14 +1113,102 @@ main .pagination ul li.active a {
     main .arr-btn {
         display: none;
     }
+}
+@media only screen and (max-width:719px) {
+    main .inner-container {
+        width: 100vw;
+        height: 480px;
+    }
+    main .slide-wrapper .slide {
+        padding: 0;
+    }
+    main .slide-wrapper>.slide>a>.text>h2 {
+        font-size: 1.8em;
+    }
+
+    /* diablo4 */
+    main .slide-wrapper>.diablo4>a {
+        padding-top: 160px;
+    }
+    main .slide-wrapper>.diablo4>a .slide-logo {
+        width: 170px;
+    }
+    main .slide-wrapper>.diablo4>a .btn-box .btn2 {
+        display: none;
+    }
+
+    /* overwatch2 */
+    main .slide-wrapper>.overwatch2>a {
+        padding-top: 110px;
+
+    }
+    main .slide-wrapper>.overwatch2>a .slide-logo {
+        width: 140px;
+        margin-bottom: 20px;
+    }
+    main .slide-wrapper>.overwatch2>a .text {
+        margin-bottom: 40px;
+    }
+
+    /* blizzcon */
+    main .slide-wrapper>.blizzcon>a {
+        padding-top: 160px;
+    }
+    main .slide-wrapper>.blizzcon>a .slide-logo {
+        width: 150px;
+    }
+    main .slide-wrapper>.blizzcon>a .text {
+        margin-bottom : 10px;
+    }
+    main .slide-wrapper>.blizzcon>a .text p {
+        display:none;
+    }
+    main .slide-wrapper>.blizzcon>a .btn-box .btn2 {
+        display: none;
+    }
+    /* wow classic */
+    main .slide-wrapper>.wow-classic>a {
+        padding-top: 190px;
+        background-position: top;
+    }
+    main .slide-wrapper>.wow-classic>a .slide-logo {
+        width: 200px;
+    }
+    main .slide-wrapper>.wow-classic>a .text{
+        margin-bottom: 30px;
+    }
+
+    /* rumble */
+    main .slide-wrapper>.rumble>a {
+        padding-top: 150px;
+    }
+    main .slide-wrapper>.rumble>a .slide-logo {
+        width: 180px;
+    }
+    main .slide-wrapper>.rumble>a .text {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    /* immortal */
+    main .slide-wrapper>.immortal>a {
+        padding-top: 170px;
+        background-position: top;
+    }
+    main .slide-wrapper>.immortal>a .slide-logo {
+        width: 180px;
+    }
+    main .slide-wrapper>.immortal>a .text {
+        text-align: center;
+    }
+    main .slide-wrapper>.immortal>a .text p {
+        display: none;
+    }
+    main .pagination {
+        bottom: 10px;
+    }
 
 }
-
-
-
-
-
-
 
 /* 추천게임 */
 .container1 .recomm {
@@ -1237,6 +1341,7 @@ main .pagination ul li.active a {
     display: none;
     width: 100%;
     position:absolute;
+    top: 0;
     z-index: 3;
 }
 .game-list>li:hover>a .multi-box video {
@@ -1289,6 +1394,75 @@ main .pagination ul li.active a {
     justify-content: center;
 }
 
+@media only screen and (max-width:1280px) {
+    .recomm .game-list {
+        grid-template-columns: repeat(4,1fr);
+        gap: 30px 15px;
+    }
+    .recomm .game-list>li>a>.g-title {
+        letter-spacing: -1.8px;
+    }
+}
+@media only screen and (max-width:1010px) {
+    main {
+        padding-bottom: 40px;
+    }
+    .container1 {
+        background-image: url('../images/bgmo_1.jpg');
+        background-size: auto;
+        background-position: top;
+    }
+
+    .recomm .game-list {
+        grid-template-columns: repeat(3,1fr);
+        margin-bottom: 50px;
+    }
+    .recomm .section-title {
+        display: flex;
+        flex-direction: column;
+    }
+    .recomm .section-title h2 {
+        margin-bottom: 40px;
+    }
+    .recomm .section-title .playable li:first-child {
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width:719px) {
+    main {
+        padding-bottom: 40px;
+    }
+    .container1 {
+        background-image: url('../images/bgmo_1_1.jpg');
+        background-size: auto;
+    }
+    .recomm .section-title {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .recomm .section-title h2 {
+        font-size: 1.6em;
+        margin-bottom: 30px;
+    }
+    .recomm .game-list {
+        width: 240%;
+        grid-template-columns: repeat(5,1fr);
+        margin-bottom: 50px;
+    }
+    .recomm .game-list>li>a>.multi-box {
+        padding-top: 100%;
+    }
+    .recomm .game-list>li>a>.multi-box>.g-logo {
+        position: absolute;
+        bottom: 0;
+    }
+    .recomm .game-list>li>a>.g-title {
+        font-size: 1em;
+    }
+
+}
+
 /* container2 ****************************************************/
 .container2 {
     width: 100%;
@@ -1304,8 +1478,8 @@ main .pagination ul li.active a {
 }
 .banner>.inner-container {
     background-image:url('../images/bg_section2_pc.jpg');
-    background-size: 100% auto;
-    background-position: fixed;
+    background-size: auto 100%;
+    background-position: center;
     border-radius: 10px;
     box-shadow: 2px 3px 10px #111;
 }
@@ -1329,6 +1503,58 @@ main .pagination ul li.active a {
     letter-spacing: -1.5px;
     color: #bbb;
 }
+@media only screen and (max-width:1199px) {
+    .banner>.inner-container {
+        background-image:url('../images/bg_section2_mo.jpg');
+        background-size: cover;
+    }
+    .banner>.inner-container>.banner-box {
+        padding-left: 0;
+        padding-top: 130px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner>.inner-container>.banner-box .banner-logo {
+        width: 340px;
+        margin-bottom: 30px;
+    }
+    .banner>.inner-container>.banner-box .text {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .banner>.inner-container>.banner-box .text h2 {
+        font-size: 3em;
+        margin-bottom: 30px;
+    }
+    .banner>.inner-container>.banner-box .text h2 br {
+        display: none;
+    }
+}
+@media only screen and (max-width:719px) {
+    .banner>.inner-container>.banner-box {
+        padding-top: 80px;
+        max-height: 420px;
+    }
+    .banner>.inner-container>.banner-box .banner-logo {
+        width: 260px;
+        margin-bottom: 30px;
+    }
+    .banner>.inner-container>.banner-box .text {
+        margin-bottom: 30px;
+    }
+    .banner>.inner-container>.banner-box .text h2  {
+        font-size: 2em;
+        margin-bottom: 16px;
+    }
+    .banner>.inner-container>.banner-box .text p {
+        font-size: 1.2em;
+    }
+        
+}
+
+
+
 /* footer **********************************/
 footer img {
     width: 20px;
@@ -1417,11 +1643,13 @@ footer .f-logo p span {
 footer .f-menu {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 50px;
 }
 footer .f-menu li {
     padding: 0 10px;
     position: relative;
+    line-height: 1.6;
 }
 footer .f-menu li::after {
     display:block;
@@ -1491,10 +1719,12 @@ footer .copyright .txt a:hover {
 footer .copyright .policy-menu {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 footer .copyright .policy-menu li {
     padding: 0 10px;
     position: relative;
+    line-height: 1.4;
 }
 footer .copyright .policy-menu li::after {
     display:block;
