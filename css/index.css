@@ -273,8 +273,13 @@ header > .menu> ul> li> .more .all-games a .squares-icon .square {
 }
 
 
-header > .menu>ul>li:hover .sub-menu {
+/* header > .menu>ul>li:hover .sub-menu {
     display:block;
+    height: auto;
+    opacity: 1;
+} */
+header > .menu>ul>li>.dropdown {
+    display: block;
     height: auto;
     opacity: 1;
 }
@@ -378,7 +383,7 @@ header > .menu2> ul >li.account> .menu2_sub {
     padding-top: 26px;
 }
 
-header > .menu2>ul>li:hover .menu2_sub {
+header > .menu2>ul>li .dropdown {
     display:block;
     height: auto;
     opacity: 1;
@@ -793,6 +798,7 @@ main .inner-container {
 main .slide-wrapper {
     display: grid;
     grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 100%;
     height: 100%;
     width: 600%;
 
@@ -800,6 +806,7 @@ main .slide-wrapper {
     top: 0;
     left: -100%;
     /* outline: 1px solid yellow; */
+    transition: .3s ease-out;
 }
 main .slide-wrapper .slide {
     width: 100%;
