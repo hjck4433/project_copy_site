@@ -22,40 +22,38 @@
     <form action="#">
       <legend>로그인</legend>
       <fieldset class="social">
-        <ul class="social-box1">
-          <li>
+        <ul class="social-box">
+          <li class="google">
             <a href="javascript:0">
               <img src="../images/login/google-logo-color.svg" alt="구글로그인">
             </a>
           </li>
-          <li>
+          <li class="facebook">
             <a href="javascript:0">
               <img src="../images/login/facebook-logo-white.svg" alt="페이스북로그인">
             </a>
           </li>
-          <li>
+          <li class="apple">
             <a href="javascript:0">
               <img src="../images/login/apple-logo-black.svg" alt="애플로그인">
             </a>
           </li>
-        </ul>
-        <ul class="social-box2">
-          <li>
+          <li class="xbox">
             <a href="javascript:0">
               <img src="../images/login/xbox-logo-white.svg" alt="엑스박스로그인">
             </a>
           </li>
-          <li>
+          <li class="playstation">
             <a href="javascript:0">
               <img src="../images/login/playstation-logo-white.svg" alt="플레이스테이션로그인">
             </a>
           </li>
-          <li>
+          <li class="switch">
             <a href="javascript:0">
               <img src="../images/login/switch-logo-white.svg" alt="닌텐도스위치로그인">
             </a>
           </li>
-          <li>
+          <li class="steam">
             <a href="javascript:0">
               <img src="../images/login/steam-logo-black.svg" alt="스팀로그인">
             </a>
@@ -69,10 +67,13 @@
       <fieldset class="bnet-account">
         <input type="text" id="user-id" placeholder="이메일 또는 휴대전화번호">
         <label for="user-id"></label>
-        <input type="passowrd" id="password" placeholder="비밀번호">
-        <label for="password"></label>
+        <div class="pw-box">
+          <input type="passowrd" id="password" placeholder="비밀번호">
+          <label for="password"></label>
+          <i class="fa-solid fa-eye"></i>
+        </div>
       </fieldset>
-      <a href="../index.html">로그인</button>
+      <a class="login" href="../index.html">로그인</a>
     </form>
     <ul class="new_help">
       <li><a href="javascript:0">Battle.net 무료 회원 가입</a></li>
@@ -83,10 +84,10 @@
       <div class="copyright">
         <ul class="policy-menu">
           <li><a href="javascript:0">BLIZZARD 최종 라이선스 계약</a></li>
-          <li><a href="javascript:0">개인정보 처리방침</a></li>
-          <li><a href="javascript:0">법률 관련 문서</a></li>
+          <li class="personal-info"><a href="javascript:0">개인정보 처리방침</a></li>
           <li><a href="javascript:0">이용 약관</a></li>
-          <li><a href="javascript:0">쿠키정보 처리방침</a></li>
+          <li><a href="javascript:0">저작권 고지</a></li>
+          <li><a href="javascript:0">쿠키</a></li>
           <li><a href="javascript:0">쿠키 설정</a></li>
         </ul>
         <p>©2023 BLIZZARD ENTERTAINMENT, INC. 모든 권리는 BLIZZARD ENTERTAINMENT에 있습니다.</p>
