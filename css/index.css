@@ -9,7 +9,6 @@
 }
 body {
     width: 100%;
-    overflow-x: hidden;
 }
 a {
     text-decoration:none;
@@ -977,13 +976,14 @@ main .arr-btn a i {
 /* 페이지네이션 **********************************/
 main .pagination {
     display: flex;
-    width: 60%;
+    justify-content: center;
+    width: 100%;
     position: absolute;
     bottom: 30px;
-    left: 20%;
 }
 main .pagination ul {
-    width: 100%;
+    width: 80%;
+    max-width: 700px;
     display: grid;
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: 16px;
@@ -1213,6 +1213,7 @@ main .pagination ul li.active a {
 /* 추천게임 */
 .container1 .recomm {
     padding-bottom: 80px;
+    overflow: hidden;
 }
 /* 제목 영역 */
 .recomm .section-title {
@@ -1483,9 +1484,6 @@ main .pagination ul li.active a {
 
 }
 /* .banner **********************************************/
-.banner {
-
-}
 .banner>.inner-container {
     background-image:url('../images/bg_section2_pc.jpg');
     background-size: auto 100%;
@@ -1494,9 +1492,11 @@ main .pagination ul li.active a {
     box-shadow: 2px 3px 10px #111;
 }
 .banner>.inner-container>.banner-box {
+    display: block;
     height: 640px;
     padding-left: 10%;
     padding-top: 120px;
+    
 }
 .banner>.inner-container>.banner-box .text {
     margin-bottom: 40px;
@@ -1566,10 +1566,6 @@ main .pagination ul li.active a {
 
 
 /* footer **********************************/
-footer img {
-    width: 20px;
-}
-
 footer {
     background-color: #171717;
     color: #ddd;
